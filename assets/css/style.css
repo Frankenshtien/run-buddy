@@ -340,9 +340,42 @@ section {
     flex: 1;
 }
 
-.trainer img {
+.trainer-img {
     width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
 }
+
+.trainer-img::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252,225,56, 0.3), rgb(2,78,118)) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.trainer-img::after:hover {
+    opacity: 1;
+}
+
+
+.trainer-img h3 {
+    position: relative;
+    z-index: 99;
+}
+
+.trainer-img h4 {
+    position: relative;
+    z-index: 99;
+}
+
 
 .trainer-bio {
     padding: 25px;
@@ -373,6 +406,18 @@ section {
 
 .trainer-bio p {
     font-size: 17px;
+}
+
+.trainer-1 {
+    background-image: url(../images/trainer-1.jpg);
+}
+
+.trainer-2 {
+    background-image: url(../images/trainer-2.jpg);
+}
+
+.trainer-3 {
+    background-image: url(../images/trainer-3.jpg);
 }
 
 .contact {
